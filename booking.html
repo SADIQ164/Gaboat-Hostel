@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Basic Icons -->
+<link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet">
+<!-- Filled Icons -->
+<link href="https://cdn.boxicons.com/3.0.8/fonts/filled/boxicons-filled.min.css" rel="stylesheet">
+<!-- Brand Icons -->
+<link href="https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Page</title>
+    <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="left_nav">
+            Gaboat<strong class="hostel">Hostel</strong>
+        </div>
+        <div class="middle_nav">
+            <input class="search_bar" type="text" placeholder="search">
+            <button class="search_button">search</button>
+        </div>
+        <i id="menu-icon" class="bx bx-list-ul"></i>
+        <div class="right_nav">
+            <a class="home" href="index.html">Home</a>
+            <a class="about" href="about.html">About</a>
+            <a class="contact" href="contact.html">Contact</a>
+            <button class="login_button"><a class="login" href="login.html">Login</a></button>
+            <button class="register_button"><a class="register" href="register.html">Register</a></button>
+        </div>
+    </div>
+
+    <header>
+         <h1>Book a Room</h1>
+    </header>
+<div class="main_container">
+   <form>
+       <div class="form-container">
+           <div class="info">
+                <h2>Student Information</h2>
+    
+                <label for="full name">Full Name</label>
+                <input type="text" id="full name" required placeholder="Enter Full Name">
+            
+        
+                <label for="student id">Student ID</label>
+                <input type="text" id="student id"  placeholder="Enter ID Number ">
+                <br>
+        
+                <label for="email">Email</label>
+                <input type="email" id="email" required placeholder="Enter Email">
+                
+        
+                <label for="phone number">Phone Number</label>
+                <input type="text" id="phone number" placeholder="Enter Phone Number">
+        
+        
+                <label for="gender">Gender</label>
+                <select>
+                    <option value="M">Male</option>
+                    <option>Female</option>
+                </select>
+            </div>
+    
+    
+            <div class="info">
+                <h2>Booking Information</h2>
+                <label>Room Number</label>
+            <input type="text" placeholder="Room Number">
+            
+    
+            <label>Date</label>
+            <input type="date">
+            
+    
+            <label for="Duration"></label>
+            <input type="text" placeholder="Duration">
+            
+    
+            <label>Price</label>
+            <input type="text" placeholder="Price">
+        
+    
+            <label>Room Type</label>
+            <select>
+                <option>Single</option>
+                <option>Double</option>
+                <option>Tripple</option>
+            </select>
+    
+            </div>
+            
+        </div>
+
+        <div class="form-buttons">
+              <a class="confirm" href="payment.html">Confirm Booking</a>
+              <button class="cancel">Cancel</button>
+        </div>
+    </form>
+</div>
+
+<script src="JS/script.js" defer></script>
+</body>
+</html>

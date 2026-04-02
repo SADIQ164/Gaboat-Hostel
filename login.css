@@ -1,0 +1,226 @@
+
+*{
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width:90%;
+    height: 100vh;
+    background-color: rgb(18, 121, 49);
+    border-radius: 10px;  
+
+     @media screen and (max-width:1024px) {
+        height: 95vh; 
+        width: 85%;
+        margin-top: 20px;
+    }
+
+}
+
+.section1{
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+    width: 50%;
+    height: 85vh;
+    background-color: white;
+    border-radius: 10px;   
+
+     @media screen and (max-width:1024px) {
+       width: 95%; 
+       height: 90vh;  
+    }
+}
+
+/* Form */
+
+.form{
+    width: 80%;
+    height: 100%;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(18, 121, 49);
+
+    @media screen and (max-width:1024px) {
+       width: 95%; 
+       height: 70vh; 
+    }
+}
+
+h1{
+    margin-bottom: 20px;
+    @media screen and (max-width:1024px) { 
+    }
+}
+
+
+input[type="email"], input[type="password"]{
+    font-size: 16px;
+    margin-bottom: 12px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    height: 5vh;
+    width: 65%;
+    padding: 8px 12px;
+    transition: background-color 0.15s;
+
+    @media screen and (max-width:1024px) {
+       width: 80%; 
+    }
+}
+
+input::placeholder{
+    font-size: 16px;
+
+    @media screen and (max-width:1024px) {
+      font-size:24px ;  
+    }
+}
+
+input[type="email"]:hover, input[type="password"]:hover{
+    background-color: rgb(243, 243, 243);
+    
+}
+
+.checkbox{
+    width: 60%;
+    display: flex; 
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px; 
+    
+    @media screen and (max-width:1024px) {
+      width: 100%;  
+      justify-content: center;
+    }
+}
+
+input[type="checkbox"]{
+    accent-color:rgb(18, 121, 49);
+
+    @media screen and (max-width:1024px) {
+     margin-right: 10px; 
+    
+    }
+}
+
+
+.forgot{
+    font-size: 15px;
+    font-weight: 500;
+
+    @media screen and (max-width:1024px) {
+      margin-left: 20px; 
+      font-size: 17px;
+    }
+
+}
+
+.login-button{
+    text-align: center;
+    width: 60%;
+    outline: none;
+    border-radius: 50px;
+    border: none;
+    font-size: 20px;
+    background-color: rgb(18, 121, 49);
+    color: white;
+    transition: background-color 0.15s, box-shadow 0.15s;
+    cursor: pointer;
+    margin-bottom: 20px;
+    padding: 8px 12px;
+
+    @media screen and (max-width:1024px) {
+      font-size: 24px;  
+    }
+}
+
+ .login-button:hover{
+    background-color: rgb(24, 139, 59);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.line{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.line1, .line2{
+   background-color: black ;
+   height: 1px;
+   width: 150px;
+   
+   @media screen and (max-width:1024px) {
+       width: 90px;   
+    }
+}
+
+
+.create-account p{
+     @media screen and (max-width:1024px) {
+       font-size: 15px;  
+    }
+}
+
+a{
+    color: rgb(18, 121, 49);
+    font-size: 16px;
+    font-weight: 550;
+
+    @media screen and (max-width:1024px) {
+       font-size: 13px; 
+       font-weight: 800; 
+    }
+}
+
+.section2{
+    border: 1px solid black;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hostel-pic{
+    width: 70%;
+    border: 2px solid;
+    height: 100vh;
+}
+
+.section2{
+    border-radius: 10px;
+    border:1px solid black;
+    width: 40%;
+    height: 70vh;
+    background: url(multimedia/download\ \(5\).jfif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+     @media screen and (max-width:1024px) {
+        display: none;  
+    }
+}
+
+
