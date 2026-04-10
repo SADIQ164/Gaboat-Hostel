@@ -34,6 +34,7 @@ body{
     }
 }
 
+/* Header */
 header{
     width: 100%;
     height: auto;
@@ -42,10 +43,11 @@ header{
     justify-content: center;
 }
 
-.home-page{
+/* Hero-Section */
+.hero-section{
     height: 90vh;
     width: 100%;
-    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(multimedia/ROSELINE\ APARTMENTS\ -\ Omokha\ Isaac.jfif);
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/multimedia/Gaboat-Hostel.jfif);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -54,12 +56,11 @@ header{
      @media screen and (max-width:1024px){     
         display: flex;
         flex-direction: column;
-        height:fit-content ;
-        
+        height:fit-content ; 
     }
-
 }
 
+/* NavBar */
 .navbar{
     width:100%;
     height: 60px;
@@ -75,8 +76,7 @@ header{
      @media screen and (max-width:1024px){
         height: 60px;
         justify-content: space-between;
-        padding: 0 30px;
-            
+        padding: 0 30px;      
     }
 }
 
@@ -121,7 +121,6 @@ header{
         height: 30px;  
         display: none;
     }
-
 }
 
 .search_bar{
@@ -133,8 +132,7 @@ header{
     box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.15);  
 
      @media screen and (max-width:1024px){
-        height: 25px;
-        
+        height: 25px;    
     }
 }
 
@@ -196,7 +194,8 @@ input::placeholder{
     width: 40%;
     position: absolute;
     top: 50px;
-    right: 0;
+    right: 20px;
+   
 }
 
 
@@ -256,10 +255,10 @@ input::placeholder{
 
 
 /* Section1 */
-.section1{
+.hero-section1{
     height: 100vh;
     margin-left: 80px;
-    margin-top: 90px;
+    margin-top: 120px;
 
      @media screen and (max-width:1024px){
         display: flex;
@@ -285,11 +284,11 @@ input::placeholder{
 
 }
 
-.medium_text, .large_text, .small_text{
+.sub_header, .main_header, .paragraph{
     color: white;
 }
 
-.medium_text{
+.sub_header{
     font-size: 21px;
 
      @media screen and (max-width:1024px){
@@ -303,7 +302,7 @@ input::placeholder{
     color:  rgb(16, 248, 86);;
 }
 
-.large_text{
+.main_header{
     font-size: 75px;
     margin-top: 0;
     line-height: 70px;
@@ -318,8 +317,8 @@ input::placeholder{
     
 }
 
-.small_text{
-    font-size: 17px;
+.paragraph{
+    font-size: 19px;
     font-weight: 500;
     display: flex;
     width: 740px;
@@ -335,9 +334,8 @@ input::placeholder{
     }
 }
 
-/* Booking and Payment */
+/* Booking */
    
-
 .booking{
     cursor: pointer;
     border-radius: 10px;
@@ -354,7 +352,6 @@ input::placeholder{
        height: 60px;
        margin-left: 25px;
     }
-
 }
 
 .booking:hover{
@@ -392,11 +389,12 @@ input::placeholder{
     align-items: center;
     justify-content: space-evenly;
     padding: 50px;
+    gap: 25px;
     margin-top: 1px;
     margin-bottom: 30px;
 
      @media screen and (max-width:1024px){
-        display: grid;
+       display: grid;
        grid-template-columns: repeat(2,1fr);
        width: 60%;
        justify-content: center;
@@ -428,8 +426,8 @@ input::placeholder{
     box-shadow: 2PX 3PX 10PX rgba(0, 0, 0, 0.5);
 
      @media screen and (max-width:1024px){
-       width:90px;
-       height:110px;
+       width:100px;
+       height:130px;
        font-size: 17px;
        font-weight: 600; 
     }
@@ -437,9 +435,9 @@ input::placeholder{
 
 
 
-/* Rooms */
+/* Rooms pictures*/
 .main-room-box{
-    margin-top: 30px;
+    margin-top: 40px;
     width: 100%;
     height: auto;
     display: flex;
@@ -460,8 +458,7 @@ input::placeholder{
         width: 60%;
         justify-content: center;
         align-items: center; 
-    }
-    
+    }  
 }
 
 .rooms{
@@ -478,9 +475,6 @@ input::placeholder{
 .image-box{
     width: 100%;
     height: 65%;
-
-    
-
 }
 
 .image-box img{
@@ -527,7 +521,6 @@ input::placeholder{
        font-size: 12px;
        font-weight: 700;  
     }
-
 }
 
 .book-room p span{
@@ -589,11 +582,7 @@ input::placeholder{
 
 
 
-
-
-
-
-/* Footer */
+/* Footer Page */
 .footer-page{
     width: 100%;
     background-color:rgb(18, 121, 49) ;

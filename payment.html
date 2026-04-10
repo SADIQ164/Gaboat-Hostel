@@ -4,24 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment Page</title>
-    <link rel="stylesheet" href="payment.css">
+    <link rel="stylesheet" href="CSS/payment.css">
 </head>
 <body>
     <div class="navbar">
         <div class="left_nav">
              Gaboat<strong class="hostel">Hostel</strong>
         </div>
-        <div class="middle_nav">
+          <div class="middle_nav"> 
             <input class="search_bar" type="text" placeholder="search">
             <button class="search_button">search</button>
-        </div>
+        </div> 
         <div class="right_nav">
-            <a class="home" href="index.html">Home</a>
+            <a class="home" href="home.html">Home</a>
             <a class="about" href="about.html">About</a>
             <a class="contact" href="contact.html">Contact</a>
-            <a class="rooms" href="rooms.html">Rooms</a>
-            <button class="login_button"><a class="login" href="login.html">Login</a></button>
-            <button class="register_button"><a class="register" href="register.html">Register</a></button>
         </div>
     </div>
 
@@ -29,7 +26,7 @@
     <div class="main_container">
    <form>
        <div class="form-container">
-           <div class="info">
+           <div class="info" id="info-1">
                 <h2>Student Details </h2>
     
                 <label for="full name">Full Name</label>
@@ -69,63 +66,18 @@
 
         <div class="form-buttons">
               <a class="confirm-payment" href="payment.html">Confirm Payment</a>
-              <button class="pending">Pending</button>
+              <button class="cancel">Cancel</button>
         </div>
     </form>
 </div>
 
-
-
-    <!-- <div class="main_container">
-        <div class="left-side">
-            <h2>Student Details</h2>
-            <form>
-                <label for="">Student Name</label>
-                <input type="text" placeholder="Enter Name">
-                <br>
-
-                <label>Student ID</label>
-                <input type="text" placeholder="Enter ID Number">
-            </form>
-
-            <div class="btn">
-                <button class="paid">Paid</button>
-                <button class="pending">Pending</button>
-            </div>
-
-            
-
+<!-- Footer -->
+<footer class="footer-page">
+        <div>
+            <p> <span>Contact:</span> 055 294 4164</p>
+            <p><span>Email:</span>gaboathostel100@gmail.com</p>
+            <p><span>Location:</span>  Tanoso, Kumasi</p>
         </div>
-
-        <div class="right-side">
-            <h2>Payment Info</h2>
-            <form>
-                <label>Amount</label>
-                <input type="text" placeholder="Enter Amount">
-                <br>
-
-                <label>Payment Method</label>
-                <select>
-                    <option value="Cash">Cash</option>
-                    <option>Bank</option>
-                    <option>Momo</option>
-                </select>
-                <br>
-
-                <label>Transaction ID</label>
-                <input type="text" placeholder="Enter ID Number">
-                <br>
-
-                <label>Date</label>
-                <input type="date">
-
-
-
-            </form>
-
-        </div>
-
-    </div>
-     -->
+     </footer>
 </body>
 </html>

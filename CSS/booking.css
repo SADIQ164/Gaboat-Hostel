@@ -17,6 +17,8 @@ body{
 
      @media screen and (max-width:1024px){
        display: flex;  
+       font-size: 45px;
+       margin-right: 25px;
     }
 }
 
@@ -33,7 +35,7 @@ body{
     right: 0;
 
      @media screen and (max-width:1024px){
-       height: 40px;
+       height: 60px;
        justify-content: space-between;
        padding: 0 20px;
          
@@ -117,15 +119,13 @@ body{
     margin-left: 30px;
 
      @media screen and (max-width:1024px){
-        font-size:12px ;  
-        margin-left: 4px; 
-        flex-direction: column;
-        border: 2px solid black;
+        font-size:20px ;  
+        margin-left: 40px; 
+        flex-direction: row;
         align-items: center;
-        justify-content: center;
-        height: 30px;
-        width: 50px;
-        
+        justify-content: flex-start;
+        height: 40px;
+        width: 200px;  
     }
 }
 
@@ -134,21 +134,22 @@ body{
     color: black;
 
      @media screen and (max-width:1024px){
-        font-size:14px ;
+        font-size:25px ;
         font-weight: 800;  
     }
 }
 
 
 .right_nav{
-    width:500px;
+    width:280px;
     height: 50px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-shrink: 0;
+    margin-right: 20px;
     
-
+    
     @media screen and (max-width:1024px){
         width: 250px;
         height: 30px;
@@ -159,56 +160,14 @@ body{
 
 .right_nav.show{
     background-color:rgb(18, 121, 49) ;
-    height: 70vh;
+    height: 30vh;
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 30%;
     position: absolute;
     top: 30px;
+    left: 280px;
 }
-
-
-.login_button{
-    background-color:white;
-    border: none;
-    border-radius: 4px;  
-    transition: background-color 0.15s, box-shadow 0.15s;
-    cursor: pointer;
-}
-
-.login_button:hover{
-    background-color: rgb(245, 245, 245);
-    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.15);
-}
-
-.register_button{
-    background-color:white;
-    border: none;
-    border-radius: 4px;
-    transition: background-color 0.15s, box-shadow 0.15s;
-    cursor: pointer;
-}
-
-.register_button:hover{
-    background-color: rgb(245, 245, 245);
-    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.15);
-}
-
-.login, .register{
-    display: flex;
-    align-items: center;
-    padding:4px 6px;
-    color: rgb(18, 121, 49);
-    font-size: 15px;
-    font-weight: 600;
-
-    @media screen and (max-width:1024px){
-        font-size: 25px; 
-        padding:2px 3px ; 
-        font-weight: bold;
-    }
-}
-
 
 .home, .about, .contact{
     color:white;
@@ -233,22 +192,24 @@ header{
     width: 100%;
 
      @media screen and (max-width:1024px){
+        margin-top: 15px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     } 
 }
 
 h1{
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px;
     font-size: 40px;
 
      @media screen and (max-width:1024px){
-        margin-top: 10px;
-        margin-bottom: 5px;
         font-size:25px ;
     }
 }
 
-.main_container{
+.main-container{
     display: flex;
     gap: 20px;
     justify-content: center;
@@ -259,8 +220,9 @@ h1{
 
     @media screen and (max-width:1024px){
         width: 100%;
-        height: 100vh;
-        margin: 10px;  
+        height:100%;
+        margin: 5px; 
+        align-items: center;
     }
 }
 
@@ -272,10 +234,12 @@ h1{
      @media screen and (max-width:1024px){
         flex-direction: column;
         justify-content: center;
-        align-items: center;  
+        align-items: center;
+        gap: 20px;
+        width: 100%;
     }
-
 }
+
 
 form{
     display: flex;
@@ -283,24 +247,98 @@ form{
     align-items: center;
     flex-direction: column;
     width: 100%;
-   
-}
 
-form .info{
-    width: 50%;
-    border-radius: 10px;
-    box-shadow: 0 0 5px gray;
-    background-color: white;
-    padding: 20px;
-    height: 70vh; 
-    
      @media screen and (max-width:1024px){
-        height: 40vh;
-        width: 95%;
+          height: 100%;
+          width: 90%;
+          margin-top: 10px;
     }
 }
 
 
+form .info{
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 0 2px gray;
+    background-color: white;
+    padding: 20px;
+    height: 80vh; 
+    
+     @media screen and (max-width:1024px){
+        height: 55vh;
+        width: 90%;
+    }
+}
+
+
+#info1{
+    height: 80vh;
+    @media screen and (max-width:1024px){
+        height: 55vh;
+        width: 90%;
+    }
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color: black ;
+    
+    @media screen and (max-width:1024px){
+        font-size:22px ;
+        font-weight: 800;
+        margin-bottom: 8px ;  
+    }
+}
+
+/* Input-Label Section */
+input{
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    
+    @media screen and (max-width:1024px){
+        padding:5px ;
+        margin: 8px 0;
+        width: 90%;  
+    }
+}
+
+input::placeholder{
+    padding-left: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    
+    @media screen and (max-width:1024px){
+        font-size:18px;    
+    }
+}
+
+
+label{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    color: rgb(18, 121, 49);
+    font-weight: 600;
+    
+    @media screen and (max-width:1024px){
+        font-weight: 600;
+        font-size: 22px; 
+    }  
+}
+
+select{
+    font-size: 18px;
+}
+
+
+/* Buttons Section */
 .form-buttons{
     margin-top: 30px;
     width: 50%;
@@ -311,10 +349,11 @@ form .info{
 
      @media screen and (max-width:1024px){
         width: 80%;
-        margin-top:20px ; 
+        margin-top:10px ; 
         height: 40px;
     }
 }
+
 
  .confirm{
     padding: 15px;
@@ -328,7 +367,7 @@ form .info{
     font-weight: 600;
 
      @media screen and (max-width:1024px){
-        font-size:17px ;
+        font-size:15px ;
         font-weight: 800;  
     }
 }
@@ -347,7 +386,7 @@ form .info{
     justify-content: center;
     border-radius: 10px;
     border: none;
-    background-color: red;
+    background-color: black;
     outline: none;
     color: white;
     font-size: 15px;
@@ -355,112 +394,57 @@ form .info{
     transition: background-color 0.15s, box-shadow 0.15s ;
 
      @media screen and (max-width:1024px){
-        font-size:17px ;
+        font-size:18px ;
         font-weight: 800;   
     }
 }
 
 .cancel:hover{
-    background-color: rgb(255, 35, 35);
+    background-color: rgb(31, 31, 31);
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
 }
 
-h2{
-    text-align: center;
-    margin-bottom: 20px;
-    color: rgb(18, 121, 49) ;
-
-     @media screen and (max-width:1024px){
-        font-size:22px ;
-        font-weight: 800;
-        margin-bottom:5px ;  
-    }
-}
-
-
-input{
-    width: 80%;
-    padding: 10px;
-    margin: 10px 0;
-    outline: none;
-    border: none;
-    border-radius: 8px;
-    background-color: white;
-    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5);
-
-     @media screen and (max-width:1024px){
-        padding:5px ;
-        margin: 5px 0;
-        width: 90%;  
-    }
-}
-
-input::placeholder{
-    padding-left: 10px;
-    font-size: 15px;
-    font-weight: 500;
-
-     @media screen and (max-width:1024px){
-        font-size:18px;    
-    }
-}
-
-
-label{
-    display: flex;
-    flex-direction: column;
-    font-size: 20px;
-    color: rgb(18, 121, 49);
+/* Footer */
+.footer-page{
+    width: 100%;
+    background-color:rgb(18, 121, 49) ;
+    color: white;
+    font-size: 17px;
     font-weight: 600;
-
-     @media screen and (max-width:1024px){
-        font-weight: 600;
-        font-size: 22px; 
-    }  
-}
-
-select{
-    font-size: 25px;
-}
-
-
-
-
-
-/* .form_section{ 
-    width: 50%;
     padding: 20px;
-    margin-top: 30px;
-    background-color: white;
-    border-radius: 10px;
-}*/
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-/* input[type="text"],input[type="email"],input[type="date"],select{ 
-    width: 50%;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 6px; 
-    border: 1px solid rgb(18, 121, 49);
-    outline: none;
-    
-}*/
+    @media screen and (max-width:1024px){
+        font-size: 18px;
+        font-weight: bold;
+        padding: 0;
+        height: 140px; 
+        margin-top: 15px;
+    }   
+}
 
-
-
-/* h1{ 
-    color:rgb(18, 121, 49) ;
-}*/
-
-
-
-/* form{ 
+.footer-page div{
+    width: fit-content;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    margin-left: 50px; 
-    margin-top: 15px; 
-}*/
+    align-items: flex-start;
+    gap:5px;
+   
 
+     @media screen and (max-width:1024px){
+        display: flex;
+        justify-content: center; 
+        gap: 2px;
+    }
+}
 
+span{
+    color: black;
+}
 
 
 
